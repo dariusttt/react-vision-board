@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from "react";
 
 function Form({onFormSubmit});
 
@@ -47,7 +47,7 @@ function Form({onFormSubmit});
           .then(res => res.json())
           .then(newData => onFormSubmit(newData, type))
 
-  formType ? 
+  FormType ? 
   setGoalData({name: "", progress: ""}) : 
   setAccomplishmentData({name: "", completed: ""})
 
@@ -72,10 +72,43 @@ function Form({onFormSubmit});
              name="name"
              value={formType? goalData.name : accomplishmentData.name}
              />
+
+
+{ 
+                // Ternary operator to determine which kind of form we are completing, based off of the dropdown selection.
+                FormType ?
+                    <label>% Complete
+                    <input 
+                        onChange={handleChange}
+                        type="number"
+                        placeholder="0"
+                        name="progress"
+                        value={goalData.progress}
+                        />
+                    </label> : 
+                    <label>Completion Date:
+                    <input 
+                        onChange={handleChange}
+                        type="text"
+                        placeholder="Ex. May 2020"
+                        name="completed"
+                        value={accomplishmentData.completed}
+                        />
+                    </label>
+                }
+                <button type="submit">Add</button>
+
+
         </form>
       
       </section>
-    )
+    );
+
+
+
+    export default Form;
+
+
 
 
 
