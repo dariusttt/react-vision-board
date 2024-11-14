@@ -34,9 +34,9 @@ function Form({onFormSubmit});
       } else {
         type = "accomplishments"
       }
-    }
+    
      
-    fetch(${type}`, {
+    fetch(`http://localhost:3000/${type}`, {
       method: 'POST',
       headers: {
           "Content-Type": "application/json",
@@ -50,7 +50,29 @@ function Form({onFormSubmit});
   formType ? 
   setGoalData({name: "", progress: ""}) : 
   setAccomplishmentData({name: "", completed: ""})
-};
+
+    };
+
+    return(
+      <section id = "form-section" >
+        <h2>Add a new goal or an accomplishment:</h2>
+        <form onSubmit={handleSubmit}>
+          
+          <select
+          name="type"
+          onChange={handleFormTypeChange}>
+            <option value="goals">Goal</option>
+            <option value="accomplishments">Accomplishment</option>
+          </select>
+        </form>
+      
+      </section>
+    )
+
+
+
+
+
 
         
 
