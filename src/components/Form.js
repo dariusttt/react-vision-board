@@ -14,3 +14,22 @@ function Form({onFormSubmit});
       }
     )
     
+    const handleFormTypeChange =() => {
+        setFormType(!formType);
+    }
+
+    const handleChange = (e) => {
+        if(formType){
+        setGoalData({...goalData, [e.target.name]: e.target.value});
+        } else {
+            setAcomplishmentData({...accomplishmentData, [e.target.name]: e.target.value});
+        }
+        }
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      
+
+        
+
+
