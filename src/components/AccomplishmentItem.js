@@ -1,6 +1,6 @@
 import React from "react"
 
-function AccomplishmentItem({accomplishment, onDeleteClick});
+function AccomplishmentItem({accomplishment, onDeleteClick}){
   const{id, name, completed} = accomplishment;
 
   const handleDelete = () =>{
@@ -15,5 +15,6 @@ function AccomplishmentItem({accomplishment, onDeleteClick});
         <p>< b className ="label">Completed: {completed}</b></p>
         </div>
   );
+};
 
   export default AccomplishmentItem;

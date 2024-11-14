@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function Form({onFormSubmit});
+function Form({onFormSubmit}){
 
   const [FormType, setFormType] = useState(true);
   const [goalData, setGoalData] = useState({
@@ -103,6 +103,7 @@ function Form({onFormSubmit});
       
       </section>
     );
+  }
 
 
 
