@@ -36,7 +36,7 @@ function Form({ onFormSubmit }){
         if(formType){ type = "goals"}
             else{ type = "accomplishments"}
 
-        fetch(`http://localhost:/${type}`, {
+        fetch(`http://localhost:3000/${type}`, {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",

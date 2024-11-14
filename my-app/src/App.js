@@ -12,13 +12,13 @@ function App() {
   const [accomplishments, setAccomplishments] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:/goals`)
+    fetch(`http://localhost:3000/goals`)
       .then(res => res.json())
       .then(setGoals);
   }, []);
 
   useEffect(() => {
-    fetch(`http://localhost:/accomplishments`)
+    fetch(`http://localhost:3000/accomplishments`)
       .then(res => res.json())
       .then(setAccomplishments);
   }, []);
@@ -39,7 +39,7 @@ function App() {
   }
 
   const onDeleteClick = (id, type) => {
-    fetch(`http://localhost:/${type}/${id}`, {
+    fetch(`http://localhost:3000/${type}/${id}`, {
       method: 'DELETE'
     })
     
