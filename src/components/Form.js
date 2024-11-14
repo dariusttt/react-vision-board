@@ -32,7 +32,7 @@ function Form({onFormSubmit});
       if(formType){
         type = "goals"
       } else {
-        type = "accomplishments"
+        type = "accomplishment"
       }
     
      
@@ -62,7 +62,7 @@ function Form({onFormSubmit});
           name="type"
           onChange={handleFormTypeChange}>
             <option value="goals">Goal</option>
-            <option value="accomplishments">Accomplishment</option>
+            <option value="accomplishment">Accomplishment</option>
           </select>
         </form>
       
