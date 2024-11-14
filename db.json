@@ -7,7 +7,7 @@
         "progress": 80
       },
       {
-        "name": "Complete Flatiron Phase 2 Video Walkthrough",
+        "name": "Complete Flatiron Software Development",
         "progress": 100,
         "id": 4
       },
@@ -17,7 +17,7 @@
         "id": 5
       },
       {
-        "name": "Own a Porsche Taycan Turbo",
+        "name": "Own a 911 Porsche Taycan Turbo",
         "progress": 10,
         "id": 6
       }
@@ -25,17 +25,17 @@
     "accomplishments": [
       {
         "id": 1,
-        "name": "Sell First Company: Epiforce, Inc.",
+        "name": "Sell First Company: Maximum Effort, Inc.",
         "completed": "July 2016"
       },
       {
         "id": 2,
-        "name": "Sell Second Company: FP Media",
+        "name": "Sell Second Company: travis Media",
         "completed": "September 2016",
         "progress": "59"
       },
       {
-        "name": "Get a Job with Pfizer out of College",
+        "name": "Get a Job with Microsoft out of College",
         "completed": "March 2020",
         "id": 4
       },
