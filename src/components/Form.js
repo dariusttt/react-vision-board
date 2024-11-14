@@ -28,7 +28,13 @@ function Form({onFormSubmit});
 
     const handleSubmit = (e) => {
       e.preventDefault();
-      
+      let type;
+      if(formType){
+        type = "goals"
+      } else {
+        type = "accomplishments"
+      }
+    }
 
         
 
