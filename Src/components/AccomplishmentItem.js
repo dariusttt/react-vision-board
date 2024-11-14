@@ -14,5 +14,7 @@ function AccomplishmentItem({accomplishment, onDeleteClick});
         <p>{name}</p>
         <p><className ="label">Completed: {completed}</b></p>
         </div>
-        
-  )
+
+  );
+
+  export default AccomplishmentItem;
