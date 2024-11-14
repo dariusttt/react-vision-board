@@ -36,7 +36,7 @@ function Form({ onFormSubmit }){
         if(formType){ type = "goals"}
             else{ type = "accomplishments"}
 
-        fetch(`http://localhost:8000/${type}`, {
+        fetch(`http://localhost:/${type}`, {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
@@ -55,7 +55,7 @@ function Form({ onFormSubmit }){
 
     return(
         <section id="form-section">
-            <h2>Add a new goal or an accomplishment:</h2>
+            <h2>Add a goal or an accomplishment:</h2>
             <form onSubmit={handleSubmit}>
                 <select 
                     name="form-type"
