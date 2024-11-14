@@ -1,4 +1,4 @@
-import React from "react"
+import React from import React from 'react';"react"
 
 function AccomplishmentItem({accomplishment, onDeleteClick});
   const{id, name, complited} = accomplishment;
