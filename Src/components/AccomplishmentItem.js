@@ -11,5 +11,8 @@ function AccomplishmentItem({accomplishment, onDeleteClick});
   return(
     <div className="card">
         <button onClick={handleDelete} classname="delete-button">X</button>
+        <p>{name}</p>
+        <p><className ="label">Completed: {completed}</b></p>
+        </div>
         
   )
