@@ -45,36 +45,47 @@ function App() {
     fetch(`http://localhost:3000/${type}/${id}`, {
       method: 'DELETE'
     })
-    
-    //Use filter to setGoal or setAccomplishments with new items
-      if(type === 'goals'){
-        setGoals(ogGoals => ogGoals.filter(ogGoal => {
-          return ogGoal.id === id ? null : ogGoal;
-        }))
-      } else{
-        setAccomplishments(ogAccomplishments => ogAccomplishments.filter(ogAccomplishment => {
-          return ogAccomplishment.id === id ? null : ogAccomplishment;
-        }))
-      }
-  }
-
-  return (
-    <div>
-      <NavBar />
-      <Form onFormSubmit={onFormSubmit}/>
-      <Switch>
-      <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/goals">
-          <Goals goals={goals} onUpdateGoal={onUpdateGoal} onDeleteClick={onDeleteClick}/>
-        </Route>
-        <Route path="/accomplishments">
-          <Accomplishments accomplishments={accomplishments} onDeleteClick={onDeleteClick}/>
-        </Route>
-      </Switch>
-    </div>
-  );
+  
+    if(type === 'goals'){
+      setGoals(ogGoals => ogGoals.filter(ogGoal => {
+        return ogGoal.id === id ? null : ogGoal;
+      }))
+    } else{
+      setAccomplishments(ogAccomplishments => ogAccomplishments.filter(ogAccomplishment => {
+        return ogAccomplishment.id === id ? null : ogAccomplishment;
+      }))
+    }
 }
+
+return (
+  <div>
+    <NavBar />
+    <Form onFormSubmit={onFormSubmit}/>
+    <Switch>
+    <Route exact path="/">
+        <Home />
+      </Route>
+      <Route path="/goals">
+        <Goals goals={goals} onUpdateGoal={onUpdateGoal} onDeleteClick={onDeleteClick}/>
+      </Route>
+      <Route path="/accomplishments">
+        <Accomplishments accomplishments={accomplishments} onDeleteClick={onDeleteClick}/>
+      </Route>
+    </Switch>
+  </div>
+);
+}
+
+  // Add your API calls here, and update state when data is received.
+  // Also, handle form submission and delete functionality.
+  // Use React Router to switch between different pages.
+  // Use CSS to style your components.
+  // Use a library like React-Bootstrap to make your components look nice.
+  // Test your application using Jest and React Testing Library.
+  // Deploy your application to a hosting platform.
+  // Use a library like Redux to manage state.
+  // Use a library like React Query to handle API calls.
+
+
 
 export default App;
