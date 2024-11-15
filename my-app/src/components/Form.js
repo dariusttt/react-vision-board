@@ -46,6 +46,7 @@ function Form({ onFormSubmit }){
             })
                 .then(res => res.json())
                 .then(newData => onFormSubmit(newData, type))
+                .catch(err => console.error(err))
 
         formType ? 
         setGoalData({name: "", progress: ""}) : 
