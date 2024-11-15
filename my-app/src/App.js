@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch} from "react-router-dom";
 
 import NavBar from "./components/NavBar";
 import Goals from "./components/Goals";
-import Accomplishments from "./components/Accomplishments";
+import Accomplishments from "./component/Accomplishments";
 import Home from "./components/Home";
 import Form from "./components/Form";
+
+import "./App.css";
+
 
 function App() {
   const [goals, setGoals] = useState([]);

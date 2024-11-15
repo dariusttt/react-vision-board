@@ -9,9 +9,7 @@ function NavBar() {
     marginRight: "20px",
     background: "#0D2E4E",
     textDecoration: "inherit", /* no underline */
-    borderRadius: "10px"
-  };
-
+    borderRadius: "10px"};
   const activeStyle = {
     border: "solid #00D4FF 2px",
     fontWeight: "bold"
