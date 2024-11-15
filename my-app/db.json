@@ -7,7 +7,7 @@
         "progress": 80
       },
       {
-        "name": "Complete Flatiron Software Development",
+        "name": "Complete  Software Development",
         "progress": 100,
         "id": 4
       },
@@ -26,24 +26,27 @@
       {
         "id": 1,
         "name": "Sell First Company: Maximum Effort, Inc.",
-        "completed": "July 2016"
+        "completed": "July 2020"
       },
       {
         "id": 2,
         "name": "Sell Second Company: travis Media",
-        "completed": "September 2016",
+        "completed": "September 2023",
         "progress": "59"
       },
       {
         "name": "Get a Job with Microsoft out of College",
-        "completed": "March 2020",
+        "completed": "March 2023",
         "id": 4
       },
       {
         "name": "New Accomplishment",
-        "completed": "June 2013",
+        "completed": "June 2025",
         "id": 5
       }
     ]
+    
   }
+  
+  
   
