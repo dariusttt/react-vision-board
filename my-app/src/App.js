@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Route, Switch} from "react-router-dom";
+import {Route} from "react-router-dom";
+
 import NavBar from "./components/NavBar";
 import Goals from "./components/Goals";
 import Accomplishments from "./components/Accomplishments";
@@ -57,17 +58,16 @@ return (
   <div>
     <NavBar />
     <Form onFormSubmit={onFormSubmit}/>
-    <Switch>
-    <Route exact path="/">
-        <Home />
-      </Route>
-      <Route path="/goals">
-        <Goals goals={goals} onUpdateGoal={onUpdateGoal} onDeleteClick={onDeleteClick}/>
-      </Route>
-      <Route path="/accomplishments">
-        <Accomplishments accomplishments={accomplishments} onDeleteClick={onDeleteClick}/>
-      </Route>
-    </Switch>
+      
+    <Route>
+      <Route path="/" element={<Home />} />
+      <Route path="/goals" element={
+        <Goals goals={goals} onUpdateGoal={onUpdateGoal}  onDeleteClick={onDeleteClick} />
+        } />
+        <Route path="/accomplishments" element={
+        <Accomplishments accomplishments={accomplishments} onDeleteClick={onDeleteClick} />
+        } />
+        </Route>
   </div>
 );
 }

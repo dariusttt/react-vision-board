@@ -5,9 +5,9 @@ function Home(){
     return(
         <div id="home-container">
             <h3>Phase 2 Project</h3>
-            <p>Just a simple goal board app created with React...</p>
+            <p>Just a simple Vision board app created with React...</p>
             {'\n'}
-            <p id="author">By Darius Kimutai -- </p>
+            <p id="author">By Darius Kemei -- </p>
             
         </div>
     );

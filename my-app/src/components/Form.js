@@ -12,7 +12,7 @@ function Form({ onFormSubmit }){
     })
 
     const handleFormTypeChange = () => {
-        setFormType(!formType);
+        setFormType(formType);
     }
 
     const handleChange = (e) => {
@@ -76,7 +76,8 @@ function Form({ onFormSubmit }){
                 { 
                 // Ternary operator to determine which kind of form we are completing, based off of the dropdown selection.
                 formType ?
-                    <label>% Complete
+                    <label>
+                        % Complete
                     <input 
                         onChange={handleChange}
                         type="number"
@@ -85,11 +86,12 @@ function Form({ onFormSubmit }){
                         value={goalData.progress}
                         />
                     </label> : 
-                    <label>Completion Date:
+                    <label>
+                        Completion Date:
                     <input 
                         onChange={handleChange}
                         type="text"
-                        placeholder="Ex. May 2020"
+                        placeholder="Ex. May 2025"
                         name="completed"
                         value={accomplishmentData.completed}
                         />

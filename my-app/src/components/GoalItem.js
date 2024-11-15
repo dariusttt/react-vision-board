@@ -7,7 +7,7 @@ function GoalItem({ goal, onUpdateGoal, onDeleteClick }) {
 
     const handleChange = (e) => {
         setProgressBar(parseInt(e.target.value))
-        fetch(`http://localhost:8000/goals/${id}`, {
+        fetch(`http://localhost:3000/goals/${id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",
