@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar";
 import Goals from "./components/Goals";
 import Accomplishments from "./components/Accomplishments";
 import Home from "./components/Home";
-import Form from "./components/Form";
+import Form from "./Form";
 
 function App() {
   const [goals, setGoals] = useState([]);
